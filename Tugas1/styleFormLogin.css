@@ -1,0 +1,81 @@
+body{
+    background-color: #000000e1;
+}
+
+.form{
+    border: 1px solid greenyellow;
+    background-color: #000;
+    opacity: 90%;
+    width: 30%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    position: relative;
+    left: 25%;
+    margin: 10%;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 9);
+}
+
+h1{
+    color: #090;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    text-shadow: 0px 0px 10px;
+}
+
+#inp{
+    width:90%;
+    color: #090;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+ input{
+    width: 80%;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    color: white;
+    background-color: rgb(40, 39, 39);
+    
+ }
+#pass{
+    position: relative;
+    left: 3px;
+} 
+label{
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color:greenyellow;
+    text-shadow: #090;
+}
+
+button{
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #090;
+    font-weight:bolder;
+    font-size: 15px;
+    color:black;
+    text-shadow: 0px 0px 10px lightyellow;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+}
+a{
+    text-decoration: none;
+}
+.forget{
+    margin-left: 10%;
+    color: white;
+}
+.signup{
+    margin-left: 35%;
+    color: #090;
+    font-weight: bold;
+}

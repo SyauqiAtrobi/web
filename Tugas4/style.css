@@ -1,0 +1,344 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* =============== Globals ============== */
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --greenh: #0d9b12;
+  --dark: #282828;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --grenns: #00ff11;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--dark);
+}
+
+.konten {
+  position: relative;
+  width: 100%;
+}
+
+/* =============== Navigation ================ */
+.navigasi {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--greenh);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.navigasi.active {
+  width: 100px;
+}
+
+.navigasi ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigasi ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  
+}
+
+.navigasi ul li:hover,
+.navigasi ul li.hovered {
+  background-color: var(--dark);
+}
+
+.navigasi ul li:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+  background-color: var(--dark);
+}
+.jmain{
+  color: var(--gray);
+}
+
+.navigasi ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--dark);
+}
+.navigasi ul li:hover a,
+.navigasi ul li.hovered a {
+  color: var(--greenh);
+}
+
+.navigasi ul li a .ikon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.admin ion-icon{
+  color: var(--gray);
+}
+.navigasi ul li a .ikon ion-icon {
+  font-size: 1.75rem;
+}
+
+.navigasi ul li a .judul {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+/* --------- curve outside ---------- */
+.navigasi ul li:hover a::before,
+.navigasi ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--dark);
+  pointer-events: none;
+}
+.navigasi ul li:hover a::after,
+.navigasi ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--dark);
+  pointer-events: none;
+}
+
+/* ===================== Main ===================== */
+.utama {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: var(--dark);
+  transition: 0.5s;
+}
+.utama.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.topbars {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.btnToggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--grenns);
+}
+
+.cari {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.cari label {
+  position: relative;
+  width: 100%;
+}
+
+.cari label input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 20px;
+  padding-left: 35px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid var(--grenns);
+  box-shadow: 0px 0px 5px white;
+}
+
+.cari label ion-icon {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 1.5rem;
+}
+
+
+/* ======================= Cards ====================== */
+.boxCard {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  
+}
+
+.boxCard .itemCard{
+  position: relative;
+  background: var(--dark);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px white;
+}
+
+.boxCard .itemCard .angka {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--greenh);
+}
+
+.boxCard .itemCard .cardTxt {
+  color: var(--grenns);
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.boxCard .itemCard .iconBx {
+  font-size: 3.5rem;
+  color: var(--grenns);
+}
+
+.boxCard .itemCard:hover {
+  background: var(--greenh);
+}
+.boxCard .itemCard:hover .angka,
+.boxCard .itemCard:hover .cardTxt,
+.boxCard .itemCard:hover .iconBx {
+  color: var(--dark);
+}
+
+.btnNewPost{
+  background-color:rgb(40, 169, 40); 
+  border:none;
+  box-shadow:0px 0px 4px white; 
+  margin:1%; 
+  padding:1%
+}
+.table-respon{
+  margin: 5%;
+}
+
+.table-respon table{
+  width: 100%;
+  border: 1px solid white;
+}
+
+.table-respon thead{
+  background-color: #222;
+}
+
+.table-respon td{
+  border: 1px solid white;
+  padding: 1%;
+}
+/* ====================== Responsive Design ========================== */
+@media (max-width: 991px) {
+  .navigasi {
+    left: -300px;
+  }
+  .navigasi.active {
+    width: 300px;
+    left: 0;
+  }
+  .utama {
+    width: 100%;
+    left: 0;
+  }
+  .utama.active {
+    left: 300px;
+  }
+  .boxCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.inProgress {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+  .user {
+    min-width: 40px;
+  }
+  .navigasi {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigasi.active {
+    width: 100%;
+    left: 0;
+  }
+  .btnToggle {
+    z-index: 10001;
+  }
+  .utama.active .btnToggle {
+    color: var(--dark);
+    position: fixed;
+    right: 0;
+    left: initial;
+  }
+}
+

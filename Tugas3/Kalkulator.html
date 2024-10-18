@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="kalkulator.css">
+        <script src="kalkulator.js"></script>
+    </head>
+    <body>
+        <div class="display" id="display">0</div>
+        <div class="frame">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="inputOperator('/')">/</button>
+            <button onclick="inputOperator('*')">*</button>
+            <button onclick="calculateTrig('sin')">Sin</button>
+            <br>
+            <button onclick="inputOperator('-')">-</button>
+            <button onclick="inputOperator('+')">+</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="calculateTrig('cos')">Cos</button>
+            <br>
+            <button onclick="inputNumber('7')">7</button>
+            <button onclick="inputNumber('8')">8</button>
+            <button onclick="inputNumber('9')">9</button>
+            <button onclick="calculateTrig('tan')">Tan</button>
+            <br>
+            <button onclick="inputNumber('4')">4</button>
+            <button onclick="inputNumber('5')">5</button>
+            <button onclick="inputNumber('6')">6</button>
+            <button onclick="sqrt()">√x</button>
+            <br>
+            <button onclick="inputNumber('1')">1</button>
+            <button onclick="inputNumber('2')">2</button>
+            <button onclick="inputNumber('3')">3</button>
+            <button onclick="inputOperator('^')">^</button>
+            <br>
+            <button onclick="inputNumber('.')">.</button>
+            <button onclick="inputNumber('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="inverse()">1/x</button>
+            <br>
+        </div>
+    </body>
+</html>

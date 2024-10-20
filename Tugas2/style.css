@@ -145,13 +145,24 @@ section{
     align-items: center;
 }
 
-.main-contain .second-contain{
+.about-contain{
+    width: 50%;
+    height: 70%;
+    margin-left:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.about-contain .second-contain{
     text-align: left;
     border: 1px solid white;
     border-radius: 10px;
     color: white;
     box-shadow: 0px 0px 15px #077b32;
+    
 }
+
 .skill-contain{
     text-align: left;
     width:50%; 

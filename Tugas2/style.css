@@ -195,6 +195,7 @@ section{
 }
 
 .project-contain{
+    margin-top:4%;
     border-radius: 10px;
     width: 60%;
     height: 50%;
@@ -214,15 +215,61 @@ section{
     width: 50vmin;
     
 }
+table, td, th{
+    border:1px solid white;
+}
 
-.project-contain table, .project-contain td{
-    border: 1px solid white;
-    text-align: center;
+table{
+    border-collapse: collapse;
+    margin: 3%;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 15px #077b32;
+
+}
+
+.project-contain th{
+    background-color: white;
+    color:black
+}
+
+.project-contain th, .project-contain td{
+    padding: 3%;
 }
 
 .project-contain a{
     text-decoration: none;
     color: white;
+    padding:3%;
+}
+
+.project-contain a:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    padding:3%;
+}
+
+.cert-contain{
+    margin-left: 20%;
+    color: white;
+    box-shadow: 0px 0px 15px #077b32;
+    border: 1px solid white;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.cert-contain td{
+    width: 30%;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.cert-contain img{
+    margin: 2%;
+    border-radius: 5px;
+}
+
+.cert-contain img:hover{
+    transform: scale(3);
 }
 
 .foot{
@@ -379,3 +426,14 @@ section{
         margin-top: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+

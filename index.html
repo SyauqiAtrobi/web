@@ -17,6 +17,7 @@
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#galery">Galery</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skill">Skills</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#project">Project</a></div>
@@ -28,6 +29,7 @@
         <div class="dropdown">
             <div class="links">
                 <a href="#">Home</a>
+                <a href="#galery">Galery</a>
                 <a href="#about">About</a>
                 <a href="#skill">Skills</a>
                 <a href="#project">Project</a>
@@ -60,6 +62,37 @@
             </div>
         </div>
         <br><br>
+        <div class="galery-contain" id="galery">
+            <div class="content second-contain">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">My <span>Galery</span></h1>
+                <div class="filter">
+                    <p>Category &NonBreakingSpace;</p>
+                    <select id="filterSelect" onchange="filterGalery()">
+                        <option value="all">All Gallery</option>
+                        <option value="formal">Foto Formal</option>
+                        <option value="keluarga">Foto Keluarga</option>
+                        <option value="selfie">Foto Selfie</option>
+                    </select>
+                </div>
+                
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="image/formal.jpg" alt="Image 1" class="formal">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/keluarga.jpg" alt="Image 2" class="keluarga">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/selfie.jpg" alt="Image 3" class="selfie">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/selfie2.jpg" alt="Image 4" class="selfie">
+                    </div>
+                </div>                
+                
+            </div>
+        </div>
+
         <div class="about-contain" id="about">
             <div class="content second-contain">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">About <span>Me</span></h1>
@@ -93,12 +126,35 @@
                 <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100" class="con">Instagram<br>syauqi atrobi</p>
                 <p data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1100" class="con">Alamat<br>Jl. Pondok Randu, Duri Kosambi, Cengkareng, Jakarta Barat</p>
                 
+                <!-- Google Maps Embed -->
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1300" class="map">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.39106256287!2d106.68847752031948!3d-6.152003932371377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f78093c7762f%3A0x3cf93e007b0c623e!2sJl.%20Raya%20Pondok%20Randu%20No.10%2C%20RT.5%2FRW.2%2C%20Duri%20Kosambi%2C%20Kecamatan%20Cengkareng%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011750!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                    width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </div>
+        
         <br>
         <div class="cert-contain" id="certificate">
             <div class="content second-contain">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">View <span>Certificate</span></h1>
+                <div class="filter">
+                    <select id="filterSelect" onchange="filterTable()">
+                        <option value="all">All Certificates</option>
+                        <option value="Introduction HTML">Introduction HTML</option>
+                        <option value="Introduction CSS">Introduction CSS</option>
+                        <option value="Introduction JavaScript">Introduction JavaScript</option>
+                        <option value="Intermediate JavaScript">Intermediate JavaScript</option>
+                        <option value="Front-end Beginner">Front-end Beginner</option>
+                    </select>
+                </div>
                 <table>
                     <tr>
                         <td>Certificate Name</td>
@@ -142,49 +198,63 @@
 
         <div class="project-contain" id="project">
             <div class="content">
-                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700" style="text-align: center; margin-bottom:10%">My <span >Project</span>'s</h1>
-                <table data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-                    <tr class="thead" >
-                        <th>Project Name</th>
-                        <th></th>
-                        <th>Link</th>
-                    </tr>
-                    <tr>
-                        <td>Form Login</td>
-                        <td></td>
-                        <td><a href="Tugas1/FormLogin.html">Tugas 1</a></td>
-                    </tr>
-                    <tr>
-                        <td>Portofolio</td>
-                        <td></td>
-                        <td><a href="index.html">Tugas 2</a></td>
-                    </tr>
-                    <tr>
-                        <td>Kalkulator</td>
-                        <td></td>
-                        <td><a href="Tugas3/Kalkulator.html">Tugas 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Dashboard Admin</td>
-                        <td></td>
-                        <td><a href="Tugas4/index.html">Tugas 4</a></td>
-                    </tr>
-                    <tr>
-                        <td>Game Tetris</td>
-                        <td></td>
-                        <td><a href="https://syauqiatrobi.github.io/tetris/">Tugas 5</a></td>
-                    </tr>
-                    <tr>
-                        <td>Diagram Chart</td>
-                        <td></td>
-                        <td><a href="TugasDiagram/index.html">Tugas 6</a></td>
-                    </tr>
-                    
-
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700" style="text-align: center; margin-bottom:10%">My <span>Project</span>'s</h1>
+                <p>Category&nbsp;</p>
+                <select id="filterSelect" onchange="filterProject()">
+                    <option value="all">All Project</option>
+                    <option value="login">Form Login</option>
+                    <option value="portofolio">Portofolio</option>
+                    <option value="kalkulator">Kalkulator</option>
+                    <option value="dashboard">Dashboard Admin</option>
+                    <option value="game">Game Tetris</option>
+                    <option value="diagram">Diagram Chart</option>
+                </select>
+                <table id="projectTable" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    <thead>
+                        <tr class="thead">
+                            <th>Project Name</th>
+                            <th></th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Form Login</td>
+                            <td></td>
+                            <td><a href="Tugas1/FormLogin.html">Tugas 1</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portofolio</td>
+                            <td></td>
+                            <td><a href="index.html">Tugas 2</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kalkulator</td>
+                            <td></td>
+                            <td><a href="Tugas3/Kalkulator.html">Tugas 3</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dashboard Admin</td>
+                            <td></td>
+                            <td><a href="Tugas4/index.html">Tugas 4</a></td>
+                        </tr>
+                        <tr>
+                            <td>Game Tetris</td>
+                            <td></td>
+                            <td><a href="https://syauqiatrobi.github.io/tetris/">Tugas 5</a></td>
+                        </tr>
+                        <tr>
+                            <td>Diagram Chart</td>
+                            <td></td>
+                            <td><a href="TugasDiagram/index.html">Tugas 6</a></td>
+                        </tr>
+                    </tbody>
                 </table>
-                
             </div>
         </div>
+        
+        
+        
         <div class="foot">
             <p>&copy 2024 - Syauqi Atrobi</p>
         </div>
